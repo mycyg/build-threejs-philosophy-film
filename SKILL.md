@@ -1,9 +1,10 @@
 ---
-name: build-threejs-philosophy-film
-description: Build complete narrative films, documentary essays, and cinematic explainers from articles, drafts, research, interviews, products, or mixed media. Use when Codex must ingest sources, research and verify claims, co-author a script and shot-by-shot storyboard, pause for storyboard approval, overproduce original visual assets with image generation, source and verify archival media, configure local TTS and ASR models, align subtitles to the final audio, choose among editorial 2D, Three.js, hybrid, or source-led editing, render a film, and perform audiovisual quality control. Trigger for article-to-video, documentary production, cinematic essays, product or philosophy films, Three.js video, AI-generated film assets, or reusable end-to-end film workflows.
+name: aletheia
+description: >-
+  Turn articles, blog posts, papers, research, interviews, products, or mixed media into complete narrative videos, documentaries, video essays, and cinematic explainers. Use when Codex must run an article-to-video or end-to-end video-production workflow: ingest and verify sources, co-author a script and shot-by-shot storyboard, pause for storyboard approval, overproduce original visual assets with image generation, source and verify archival media, configure local TTS and ASR models, align subtitles to final audio, choose among editorial 2D, Three.js, hybrid, or source-led editing, render the film, and perform audiovisual quality control. Trigger for article to video, text to video, documentary production, cinematic essays, product or philosophy films, Three.js video, AI-generated film assets, or reusable film workflows.
 ---
 
-# Build Narrative Film
+# ALETHEIA — Build Narrative Film
 
 Turn source material into an authored film. Three.js is one available instrument, not the house style and not the default answer.
 
@@ -46,7 +47,7 @@ Read [creative-direction.md](references/creative-direction.md).
 Choose a provisional renderer from `hybrid`, `threejs`, `canvas2d`, or `edit`; it may change after storyboard approval.
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/init_film_project.py \
+python3 ~/.codex/skills/aletheia/scripts/init_film_project.py \
   --title "Film title" \
   --output /absolute/path/to/film-build \
   --duration 180 \
@@ -81,7 +82,7 @@ Record approval in `storyboard-approval.json`. If the user requested uninterrupt
 Create `assets/generation-queue.json` from the approved storyboard before generating anything. Default to a production pool near three times the expected final visual count, with at least four plausible candidates per designed shot and more for covers, recurring motifs, or visual turning points. Adjust upward when continuity is fragile; reduce only when the user requests an economical pass.
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/build_asset_queue.py \
+python3 ~/.codex/skills/aletheia/scripts/build_asset_queue.py \
   --project /absolute/path/to/film-build
 ```
 
@@ -108,7 +109,7 @@ Capture or download source media only within the user's scope. Verify interviews
 5. Run full-segment ASR audit and generate subtitle cues from actual word timestamps:
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/audit_narration.py \
+python3 ~/.codex/skills/aletheia/scripts/audit_narration.py \
   --project /absolute/path/to/film-build --model small
 ```
 
@@ -119,7 +120,7 @@ For authentic clips, store the original audio, local transcript, speaker check, 
 After acquiring an authorized local source file, extract and verify the exact range rather than trusting a visual preview:
 
 ```bash
-.asr-venv/bin/python ~/.codex/skills/build-threejs-philosophy-film/scripts/verify_source_clip.py \
+.asr-venv/bin/python ~/.codex/skills/aletheia/scripts/verify_source_clip.py \
   --project /absolute/path/to/film-build \
   --asset-id interview-01 \
   --source /absolute/path/to/full-interview.mp4 \
@@ -148,13 +149,13 @@ Read [renderers-and-editing.md](references/renderers-and-editing.md).
 Run staged checks:
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/validate_project.py \
+python3 ~/.codex/skills/aletheia/scripts/validate_project.py \
   --project /absolute/path/to/film-build --stage plan
 
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/validate_project.py \
+python3 ~/.codex/skills/aletheia/scripts/validate_project.py \
   --project /absolute/path/to/film-build --stage assets
 
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/validate_project.py \
+python3 ~/.codex/skills/aletheia/scripts/validate_project.py \
   --project /absolute/path/to/film-build --stage audio
 ```
 
@@ -165,7 +166,7 @@ Render a short representative section before committing to a long full render wh
 Render through the chosen pipeline. For the included web kernel, use `?t=<seconds>&clean=1` for exact-frame inspection and WebCodecs for the silent master. Mix with `mix_video.swift` on macOS or `mix_video_ffmpeg.py` cross-platform:
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/mix_video_ffmpeg.py \
+python3 ~/.codex/skills/aletheia/scripts/mix_video_ffmpeg.py \
   --project /absolute/path/to/film-build
 ```
 
@@ -174,10 +175,10 @@ An NLE may replace either mixer while preserving the declared timeline and final
 After producing the final MP4:
 
 ```bash
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/audit_motion.py \
+python3 ~/.codex/skills/aletheia/scripts/audit_motion.py \
   --project /absolute/path/to/film-build
 
-python3 ~/.codex/skills/build-threejs-philosophy-film/scripts/validate_project.py \
+python3 ~/.codex/skills/aletheia/scripts/validate_project.py \
   --project /absolute/path/to/film-build --stage rendered
 ```
 
