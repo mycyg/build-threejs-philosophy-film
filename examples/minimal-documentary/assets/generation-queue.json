@@ -1,0 +1,568 @@
+{
+  "storyboard_revision": 1,
+  "created_from_approved_storyboard": true,
+  "imagegen_route": "codex-built-in-imagegen",
+  "jobs": [
+    {
+      "id": "gen-sh-001-primary-01",
+      "status": "pending",
+      "shot_id": "sh-001",
+      "scene_id": "ledger",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 1,
+      "variant_axis": "establishing",
+      "prompt_spec": {
+        "use_case": "historical-scene",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "潮湿河镇档案室里的旧水位册，近距离可见日期、刻度和若干模糊姓名，不生成可读长句",
+        "shot_function": "让水位记录首先作为人的记忆出现",
+        "composition": "旧账册占据画面下方，手写水位线向右延伸，姓名停在光线边缘",
+        "action": "水迹缓慢扩散，镜头依次经过日期、刻度和姓名，三次信息变化",
+        "variant_direction": "wider context, clear geography, and useful negative space",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "21:9 wide frame",
+          "no watermark",
+          "no modern computer"
+        ],
+        "avoid": [
+          "fantasy glow",
+          "perfect calligraphy"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-001-primary-01.png",
+      "asset_id": "asset-gen-sh-001-primary-01"
+    },
+    {
+      "id": "gen-sh-001-primary-02",
+      "status": "pending",
+      "shot_id": "sh-001",
+      "scene_id": "ledger",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 2,
+      "variant_axis": "recognition",
+      "prompt_spec": {
+        "use_case": "historical-scene",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "潮湿河镇档案室里的旧水位册，近距离可见日期、刻度和若干模糊姓名，不生成可读长句",
+        "shot_function": "让水位记录首先作为人的记忆出现",
+        "composition": "旧账册占据画面下方，手写水位线向右延伸，姓名停在光线边缘",
+        "action": "水迹缓慢扩散，镜头依次经过日期、刻度和姓名，三次信息变化",
+        "variant_direction": "the subject or evidence becomes immediately legible",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "21:9 wide frame",
+          "no watermark",
+          "no modern computer"
+        ],
+        "avoid": [
+          "fantasy glow",
+          "perfect calligraphy"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-001-primary-02.png",
+      "asset_id": "asset-gen-sh-001-primary-02"
+    },
+    {
+      "id": "gen-sh-001-primary-03",
+      "status": "pending",
+      "shot_id": "sh-001",
+      "scene_id": "ledger",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 3,
+      "variant_axis": "transformation",
+      "prompt_spec": {
+        "use_case": "historical-scene",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "潮湿河镇档案室里的旧水位册，近距离可见日期、刻度和若干模糊姓名，不生成可读长句",
+        "shot_function": "让水位记录首先作为人的记忆出现",
+        "composition": "旧账册占据画面下方，手写水位线向右延伸，姓名停在光线边缘",
+        "action": "水迹缓慢扩散，镜头依次经过日期、刻度和姓名，三次信息变化",
+        "variant_direction": "a visible state change that advances the shot's idea",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "21:9 wide frame",
+          "no watermark",
+          "no modern computer"
+        ],
+        "avoid": [
+          "fantasy glow",
+          "perfect calligraphy"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-001-primary-03.png",
+      "asset_id": "asset-gen-sh-001-primary-03"
+    },
+    {
+      "id": "gen-sh-001-primary-04",
+      "status": "pending",
+      "shot_id": "sh-001",
+      "scene_id": "ledger",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 4,
+      "variant_axis": "detail",
+      "prompt_spec": {
+        "use_case": "historical-scene",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "潮湿河镇档案室里的旧水位册，近距离可见日期、刻度和若干模糊姓名，不生成可读长句",
+        "shot_function": "让水位记录首先作为人的记忆出现",
+        "composition": "旧账册占据画面下方，手写水位线向右延伸，姓名停在光线边缘",
+        "action": "水迹缓慢扩散，镜头依次经过日期、刻度和姓名，三次信息变化",
+        "variant_direction": "a close material, human, object, or document detail",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "21:9 wide frame",
+          "no watermark",
+          "no modern computer"
+        ],
+        "avoid": [
+          "fantasy glow",
+          "perfect calligraphy"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-001-primary-04.png",
+      "asset_id": "asset-gen-sh-001-primary-04"
+    },
+    {
+      "id": "gen-sh-003-primary-01",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 1,
+      "variant_axis": "establishing",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "wider context, clear geography, and useful negative space",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "same paper and light direction as opening",
+          "no readable personal data",
+          "21:9"
+        ],
+        "avoid": [
+          "posed stock photo",
+          "dramatic sunset"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-primary-01.png",
+      "asset_id": "asset-gen-sh-003-primary-01"
+    },
+    {
+      "id": "gen-sh-003-primary-02",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 2,
+      "variant_axis": "recognition",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "the subject or evidence becomes immediately legible",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "same paper and light direction as opening",
+          "no readable personal data",
+          "21:9"
+        ],
+        "avoid": [
+          "posed stock photo",
+          "dramatic sunset"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-primary-02.png",
+      "asset_id": "asset-gen-sh-003-primary-02"
+    },
+    {
+      "id": "gen-sh-003-primary-03",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 3,
+      "variant_axis": "transformation",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "a visible state change that advances the shot's idea",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "same paper and light direction as opening",
+          "no readable personal data",
+          "21:9"
+        ],
+        "avoid": [
+          "posed stock photo",
+          "dramatic sunset"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-primary-03.png",
+      "asset_id": "asset-gen-sh-003-primary-03"
+    },
+    {
+      "id": "gen-sh-003-primary-04",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 4,
+      "variant_axis": "detail",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "a close material, human, object, or document detail",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "same paper and light direction as opening",
+          "no readable personal data",
+          "21:9"
+        ],
+        "avoid": [
+          "posed stock photo",
+          "dramatic sunset"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-primary-04.png",
+      "asset_id": "asset-gen-sh-003-primary-04"
+    },
+    {
+      "id": "gen-sh-003-primary-05",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "primary",
+      "kind": "generated-image",
+      "variant_index": 5,
+      "variant_axis": "transition",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "composition and movement space designed for the adjoining shot",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "same paper and light direction as opening",
+          "no readable personal data",
+          "21:9"
+        ],
+        "avoid": [
+          "posed stock photo",
+          "dramatic sunset"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-primary-05.png",
+      "asset_id": "asset-gen-sh-003-primary-05"
+    },
+    {
+      "id": "gen-sh-003-transition-detail-01",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "transition-detail",
+      "kind": "generated-image",
+      "variant_index": 1,
+      "variant_axis": "establishing",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "墨迹、水位横线、河面反光之间可用于匹配剪辑的微距细节",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "wider context, clear geography, and useful negative space",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "macro detail",
+          "same palette",
+          "no readable text"
+        ],
+        "avoid": [
+          "abstract neon"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-transition-detail-01.png",
+      "asset_id": "asset-gen-sh-003-transition-detail-01"
+    },
+    {
+      "id": "gen-sh-003-transition-detail-02",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "transition-detail",
+      "kind": "generated-image",
+      "variant_index": 2,
+      "variant_axis": "recognition",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "墨迹、水位横线、河面反光之间可用于匹配剪辑的微距细节",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "the subject or evidence becomes immediately legible",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "macro detail",
+          "same palette",
+          "no readable text"
+        ],
+        "avoid": [
+          "abstract neon"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-transition-detail-02.png",
+      "asset_id": "asset-gen-sh-003-transition-detail-02"
+    },
+    {
+      "id": "gen-sh-003-transition-detail-03",
+      "status": "pending",
+      "shot_id": "sh-003",
+      "scene_id": "return-name",
+      "role": "transition-detail",
+      "kind": "generated-image",
+      "variant_index": 3,
+      "variant_axis": "transformation",
+      "prompt_spec": {
+        "use_case": "photorealistic-natural",
+        "asset_type": "narrative film shot candidate",
+        "primary_request": "墨迹、水位横线、河面反光之间可用于匹配剪辑的微距细节",
+        "shot_function": "让责任重新获得署名，同时保留机器的精度",
+        "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+        "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+        "variant_direction": "a visible state change that advances the shot's idea",
+        "continuity": {
+          "ontology": [
+            "水位线",
+            "纸张纤维",
+            "手写墨迹",
+            "冷色数字"
+          ],
+          "palette": [
+            "#1d2a2e",
+            "#d9d1bf",
+            "#9a5538",
+            "#8fb8bd"
+          ],
+          "texture": "潮湿纸张、轻微银盐颗粒",
+          "light": "阴天漫射光，结尾出现暖色侧光",
+          "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照"
+        },
+        "constraints": [
+          "macro detail",
+          "same palette",
+          "no readable text"
+        ],
+        "avoid": [
+          "abstract neon"
+        ]
+      },
+      "output_hint": "assets/generated/gen-sh-003-transition-detail-03.png",
+      "asset_id": "asset-gen-sh-003-transition-detail-03"
+    }
+  ]
+}

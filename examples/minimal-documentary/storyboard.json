@@ -1,0 +1,94 @@
+{
+  "title": "河流留下的名字",
+  "revision": 1,
+  "shots": [
+    {
+      "id": "sh-001",
+      "scene_id": "ledger",
+      "start": 0,
+      "end": 7,
+      "narrative_function": "让水位记录首先作为人的记忆出现",
+      "evidence_ids": ["ev-ledger-001"],
+      "audio": {"type": "narration", "segment_ids": ["nar-001"]},
+      "composition": "旧账册占据画面下方，手写水位线向右延伸，姓名停在光线边缘",
+      "action": "水迹缓慢扩散，镜头依次经过日期、刻度和姓名，三次信息变化",
+      "transition_in": "黑场中先听见翻页声",
+      "transition_out": "手写横线接入传感器的电子基线",
+      "renderer": "edit",
+      "intentional_hold": false,
+      "asset_needs": [
+        {
+          "role": "primary",
+          "kind": "generated-image",
+          "use_case": "historical-scene",
+          "prompt_intent": "潮湿河镇档案室里的旧水位册，近距离可见日期、刻度和若干模糊姓名，不生成可读长句",
+          "target_count": 4,
+          "selected_min": 1,
+          "constraints": ["21:9 wide frame", "no watermark", "no modern computer"],
+          "avoid": ["fantasy glow", "perfect calligraphy"]
+        }
+      ]
+    },
+    {
+      "id": "sh-002",
+      "scene_id": "sensor",
+      "start": 7,
+      "end": 16,
+      "narrative_function": "把更精确的机器记录与消失的人名放在同一证据面上",
+      "evidence_ids": ["ev-ledger-001", "ev-ledger-002"],
+      "audio": {"type": "narration", "segment_ids": ["nar-002"]},
+      "composition": "左侧旧账册局部，右侧冷色传感器曲线，中间保留空白姓名栏",
+      "action": "数字逐位稳定，空白栏被框出，随后旧姓名在反光中短暂显现",
+      "transition_in": "手写线与电子线精确匹配",
+      "transition_out": "空白栏扩大为新表格的一整列",
+      "renderer": "canvas2d",
+      "intentional_hold": false,
+      "asset_needs": [
+        {
+          "role": "evidence",
+          "kind": "source-document",
+          "prompt_intent": "使用 Sample 原文与图形化水位数据制作对照",
+          "target_count": 1,
+          "selected_min": 1
+        }
+      ]
+    },
+    {
+      "id": "sh-003",
+      "scene_id": "return-name",
+      "start": 16,
+      "end": 24,
+      "narrative_function": "让责任重新获得署名，同时保留机器的精度",
+      "evidence_ids": ["ev-ledger-002"],
+      "audio": {"type": "narration", "segment_ids": ["nar-003"]},
+      "composition": "档案员的手在新表格警报旁写下一行姓名，背景河面失焦",
+      "action": "笔尖落下、姓名栏被填入、焦点从纸面移到河流，结尾停留一秒半",
+      "transition_in": "空白列收窄为纸面上的一格",
+      "transition_out": "墨迹横笔与远处河面重合后淡出",
+      "renderer": "edit",
+      "intentional_hold": true,
+      "asset_needs": [
+        {
+          "role": "primary",
+          "kind": "generated-image",
+          "use_case": "photorealistic-natural",
+          "prompt_intent": "档案员在现代水位警报记录旁手写责任人姓名，背景是阴天河面，克制纪实摄影",
+          "target_count": 5,
+          "selected_min": 1,
+          "constraints": ["same paper and light direction as opening", "no readable personal data", "21:9"],
+          "avoid": ["posed stock photo", "dramatic sunset"]
+        },
+        {
+          "role": "transition-detail",
+          "kind": "generated-image",
+          "use_case": "photorealistic-natural",
+          "prompt_intent": "墨迹、水位横线、河面反光之间可用于匹配剪辑的微距细节",
+          "target_count": 3,
+          "selected_min": 1,
+          "constraints": ["macro detail", "same palette", "no readable text"],
+          "avoid": ["abstract neon"]
+        }
+      ]
+    }
+  ]
+}

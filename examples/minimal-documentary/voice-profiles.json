@@ -1,0 +1,12 @@
+{
+  "narrator": {
+    "provider": "local-mlx",
+    "name": "zh-CN-XiaoxiaoNeural",
+    "reference_audio": "",
+    "reference_text": "河流继续向前，记录让责任留下名字。",
+    "sample_instructions": [
+      "A restrained Chinese documentary narrator with natural rhythm and no announcer tone."
+    ],
+    "pronunciations": {}
+  }
+}

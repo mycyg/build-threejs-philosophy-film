@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Narrative Film Runtime</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111}
+    body{display:grid;place-items:center}
+    #film{display:block;width:min(100vw,177.7778vh);height:min(56.25vw,100vh);box-shadow:0 24px 90px rgba(0,0,0,.34)}
+    #webgl{display:none}
+    #controls{position:fixed;left:18px;right:18px;bottom:16px;display:grid;grid-template-columns:90px 1fr 140px 220px;gap:10px;align-items:center;padding:11px 14px;border-radius:14px;background:rgba(248,248,248,.92);font:12px/1.2 system-ui,sans-serif;color:#222;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+    #controls button,#controls a{height:34px;border:0;border-radius:9px;background:#202020;color:#fff;text-decoration:none;display:grid;place-items:center;font:600 12px/1 system-ui,sans-serif;cursor:pointer}
+    #controls a{background:#246c52}
+    #controls a[hidden]{display:none}
+    #time{width:100%}
+    #status{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    body.rendering #controls{opacity:.12;pointer-events:none}
+    body.clean #controls{display:none}
+  </style>
+</head>
+<body>
+  <canvas id="film"></canvas>
+  <canvas id="webgl"></canvas>
+  <div id="controls">
+    <button id="renderButton">渲染影片</button>
+    <input id="time" type="range" min="0" value="0" step="0.01" />
+    <span id="readout">00:00 / 00:00</span>
+    <span id="status">正在加载影片设计…</span>
+    <a id="download" hidden>下载无声母片</a>
+  </div>
+  <script type="module">
+    import { bootFilmRuntime } from './film-runtime.js';
+    import { createFilmDesign } from './film-design.js';
+    await bootFilmRuntime(createFilmDesign);
+  </script>
+</body>
+</html>

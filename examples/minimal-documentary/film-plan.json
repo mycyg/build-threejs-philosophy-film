@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "河流留下的名字",
+    "slug": "river-kept-the-names",
+    "duration": 24,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "language": "zh-CN",
+    "format": "documentary"
+  },
+  "production": {
+    "renderer": "edit",
+    "audio_locked": false,
+    "picture_locked": false
+  },
+  "design": {
+    "thesis": "精确的记录若抹去了判断者，责任也会随之失去名字。",
+    "palette": ["#1d2a2e", "#d9d1bf", "#9a5538", "#8fb8bd"],
+    "typography": {"display": "Noto Serif CJK SC", "text": "Noto Sans CJK SC"},
+    "layout_principles": ["纸页与数据共享同一水平基线", "姓名只在证据需要时出现"],
+    "materials": ["潮湿纸纤维", "哑光仪表玻璃", "河面反光"],
+    "motion_verbs": ["记录", "抹除", "重新署名"],
+    "transition_seconds": 1.2
+  },
+  "credits": {
+    "developed_by": "",
+    "company": "",
+    "speak_developed_by": false,
+    "speak_company": false
+  },
+  "audio": {
+    "music_file": "",
+    "voice_dir": "voice",
+    "music_base": 0.18,
+    "music_duck": 0.05
+  },
+  "render": {
+    "silent_video": "render/silent.mp4",
+    "output_video": "render/final.mp4"
+  },
+  "qa": {
+    "intentional_holds": [
+      {"start": 22.5, "end": 24, "reason": "让最后一个姓名与河面完成对应"}
+    ]
+  },
+  "scenes": [
+    {
+      "id": "ledger",
+      "start": 0,
+      "end": 7,
+      "title": "旧水位册",
+      "narrative_function": "建立带有人名的旧记录",
+      "philosophy": "记录同时保存事实与承担事实的人",
+      "human_meaning": "判断留下可追溯的痕迹",
+      "evidence_ids": ["ev-ledger-001"],
+      "visual_motif": "手写水位线",
+      "motion": {"verb": "记录", "camera": "沿纸页横向移动", "transition_out": "手写线匹配电子基线"},
+      "assets": []
+    },
+    {
+      "id": "sensor",
+      "start": 7,
+      "end": 16,
+      "title": "精确的空白",
+      "narrative_function": "显示精度提升与责任痕迹消失同时发生",
+      "philosophy": "中性的结构也会选择保留什么",
+      "human_meaning": "没有署名的判断难以追责",
+      "evidence_ids": ["ev-ledger-001", "ev-ledger-002"],
+      "visual_motif": "空白姓名栏",
+      "motion": {"verb": "抹除", "camera": "固定对照后进入空白栏", "transition_out": "空白栏扩展为新表格"},
+      "assets": []
+    },
+    {
+      "id": "return-name",
+      "start": 16,
+      "end": 24,
+      "title": "重新署名",
+      "narrative_function": "让机器精度与人的责任重新共存",
+      "philosophy": "责任需要可见的承担者",
+      "human_meaning": "警报旁重新出现谁看见、谁判断、谁负责",
+      "evidence_ids": ["ev-ledger-002"],
+      "visual_motif": "新写下的横笔",
+      "motion": {"verb": "重新署名", "camera": "从纸面移焦到河面", "transition_out": "墨迹与河面重合"},
+      "assets": []
+    }
+  ],
+  "narration": [
+    {"id": "nar-001", "start": 0.8, "voice": "narrator", "text": "旧水位册记下日期、刻度，也记下最先赶到桥边的人。", "scene_id": "ledger"},
+    {"id": "nar-002", "start": 7.8, "voice": "narrator", "text": "传感器让数字更准，表格里却少了一件事：谁看见了，又是谁作出判断。", "scene_id": "sensor"},
+    {"id": "nar-003", "start": 16.8, "voice": "narrator", "text": "当姓名回到警报旁边，机器没有失去精度，责任重新有了去处。", "scene_id": "return-name"}
+  ]
+}

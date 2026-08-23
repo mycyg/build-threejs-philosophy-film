@@ -1,0 +1,4 @@
+interface:
+  display_name: "叙事影片与纪录片工坊"
+  short_description: "从文章到分镜确认、素材量产、配音校对、剪辑渲染与成片质检"
+  default_prompt: "Use $build-threejs-philosophy-film 将这份文章或素材制作成完整叙事影片：先完成研究、创意方向、脚本和逐镜分镜并等我确认，再充分准备候选素材，完成配音、逐段转写校对、剪辑、渲染与成片质检。"

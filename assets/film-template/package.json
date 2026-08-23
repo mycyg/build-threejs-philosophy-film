@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "mp4-muxer": "^5.2.2",
+    "three": "^0.179.1"
+  }
+}
+

@@ -1,0 +1,8 @@
+{
+  "policy": {
+    "surplus_multiplier": 3.0,
+    "default_candidates_per_shot": 6,
+    "keep_rejected": true
+  },
+  "assets": []
+}

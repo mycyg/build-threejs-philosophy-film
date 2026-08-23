@@ -1,0 +1,5 @@
+{
+  "tts": {"engine": "qwen3-tts-mlx", "environment": ".tts-venv", "device": "apple-silicon"},
+  "asr": {"engine": "faster-whisper", "model": "small", "device": "auto", "compute_type": "auto", "language": "zh"},
+  "image": {"engine": "codex-built-in-imagegen", "local_fallback": null}
+}

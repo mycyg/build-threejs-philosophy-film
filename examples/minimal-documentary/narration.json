@@ -1,0 +1,23 @@
+[
+  {
+    "id": "nar-001",
+    "start": 0.8,
+    "voice": "narrator",
+    "text": "旧水位册记下日期、刻度，也记下最先赶到桥边的人。",
+    "scene_id": "ledger"
+  },
+  {
+    "id": "nar-002",
+    "start": 7.8,
+    "voice": "narrator",
+    "text": "传感器让数字更准，表格里却少了一件事：谁看见了，又是谁作出判断。",
+    "scene_id": "sensor"
+  },
+  {
+    "id": "nar-003",
+    "start": 16.8,
+    "voice": "narrator",
+    "text": "当姓名回到警报旁边，机器没有失去精度，责任重新有了去处。",
+    "scene_id": "return-name"
+  }
+]

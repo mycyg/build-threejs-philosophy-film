@@ -1,0 +1,3 @@
+mlx-audio
+numpy
+soundfile

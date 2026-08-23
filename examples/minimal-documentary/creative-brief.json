@@ -1,0 +1,27 @@
+{
+  "title": "河流留下的名字",
+  "audience": "关注技术与公共责任的普通观众",
+  "thesis": "精确的记录若抹去了判断者，责任也会随之失去名字。",
+  "tension": "机器的精度与人的责任痕迹",
+  "emotional_arc": ["潮湿的记忆", "冷静的替换", "重新署名"],
+  "evidence_strategy": ["虚构原文", "旧账册特写", "传感器读数对照"],
+  "visual_world": {
+    "ontology": ["水位线", "纸张纤维", "手写墨迹", "冷色数字"],
+    "palette": ["#1d2a2e", "#d9d1bf", "#9a5538", "#8fb8bd"],
+    "typography": "人文宋体与窄体数字并置",
+    "texture": "潮湿纸张、轻微银盐颗粒",
+    "light": "阴天漫射光，结尾出现暖色侧光",
+    "shot_grammar": "档案微距、静物横移、数字与笔迹的精确对照",
+    "edit_grammar": "以水位线的横向运动连接纸页、仪表与河面"
+  },
+  "production": {
+    "format": "documentary",
+    "renderer": "edit",
+    "asset_surplus_multiplier": 3.0,
+    "subtitle_style": "下三分之一单行浅色字幕",
+    "target_runtime_seconds": 24
+  },
+  "voice": "克制、清楚、接近日常讲述的中文纪录片旁白",
+  "music": "稀疏木质打击与低频水声，无旋律煽情",
+  "approved_by_user": true
+}

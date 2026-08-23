@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.asr-venv/
+.tts-venv/
+.media-venv/
+node_modules/
+models/
+*.log
+render/
+qa/frames/
+qa/contact-sheets/
+audio/candidates/
+voice/wav/

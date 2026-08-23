@@ -1,0 +1,26 @@
+{
+  "evidence": [
+    {
+      "id": "ev-ledger-001",
+      "claim": "旧水位册同时记录刻度与参与救援者的名字。",
+      "source": "source/original/sample-article.md",
+      "locator": "第 1 段",
+      "type": "supplied-fictional-source",
+      "quotation_status": "paraphrase",
+      "confidence": "source-native",
+      "visual": "水位册、手写日期与姓名",
+      "rights": "repository sample"
+    },
+    {
+      "id": "ev-ledger-002",
+      "claim": "自动记录提高了精度，却没有保留人的判断与责任。",
+      "source": "source/original/sample-article.md",
+      "locator": "第 1–2 段",
+      "type": "supplied-fictional-source",
+      "quotation_status": "interpretation",
+      "confidence": "source-native",
+      "visual": "传感器读数与空白姓名栏的对照",
+      "rights": "repository sample"
+    }
+  ]
+}
