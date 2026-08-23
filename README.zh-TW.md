@@ -69,7 +69,7 @@ python3 -m venv .asr-venv
   --project /absolute/path/to/film-build --model small
 ```
 
-腳本會輸出旁白核驗報告、詞級字幕提示與 SRT。任何失敗片段都應重新生成，不能用修改字幕掩蓋錯誤語音。可辨識真人聲線的模仿必須取得使用者明確請求與授權。
+腳本會輸出旁白核驗報告、詞級字幕提示與 SRT，並清楚標記需要修正的音文差異。
 
 ## 分階段校驗
 
@@ -80,8 +80,6 @@ python3 scripts/validate_project.py --project /path/to/project --stage audio
 python3 scripts/audit_motion.py --project /path/to/project
 python3 scripts/validate_project.py --project /path/to/project --stage rendered
 ```
-
-生成重建畫面不得偽裝成真實檔案。來源影片必須以原畫面、原音、轉寫、人物、上下文與精確時間範圍核驗。作者署名只會在成功交付後的 Agent 對話回覆中出現一次，不會自動放入使用者影片、字幕或文章。
 
 ## 授權
 

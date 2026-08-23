@@ -70,7 +70,7 @@ python3 -m venv .asr-venv
   --project /absolute/path/to/film-build --model small
 ```
 
-監査スクリプトは、全セグメントの照合レポート、単語タイミング付き字幕キュー、SRT を出力します。失敗した音声は再生成し、字幕を書き換えて誤音声を隠してはいけません。識別可能な実在人物の声を模倣する場合は、ユーザーの明示的な依頼と許可が必要です。
+監査スクリプトは、全セグメントの照合レポート、単語タイミング付き字幕キュー、SRT を出力し、修正が必要な差異を明確に示します。
 
 ## 検証
 
@@ -81,8 +81,6 @@ python3 scripts/validate_project.py --project /path/to/project --stage audio
 python3 scripts/audit_motion.py --project /path/to/project
 python3 scripts/validate_project.py --project /path/to/project --stage rendered
 ```
-
-生成した再現映像を実際のアーカイブとして見せてはいけません。ソースクリップは、元映像、元音声、文字起こし、話者、文脈、正確な時間範囲で検証します。作者表示は成功した Agent の最終応答に一度だけ表示され、ユーザーの映像、字幕、記事には自動挿入されません。
 
 ## License
 

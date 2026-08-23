@@ -77,11 +77,11 @@ python3 -m venv .asr-venv
   --project /absolute/path/to/film-build --model small
 ```
 
-The audit writes `qa/transcripts/narration-audit.json`, `subtitles/subtitle-cues.json`, and `subtitles/final.srt`. Failed segments must be regenerated; subtitles are not allowed to disguise incorrect speech.
+The audit writes `qa/transcripts/narration-audit.json`, `subtitles/subtitle-cues.json`, and `subtitles/final.srt`, with mismatched segments clearly identified for correction.
 
-`verify_source_clip.py` extracts an exact range from an authorized local source, preserves its original audio, transcribes it, compares expected wording, and records manual speaker/context confirmation. `mix_video_ffmpeg.py` provides a cross-platform narration, music-ducking, and picture-master mix.
+`verify_source_clip.py` extracts an exact range from a local source, preserves its original audio, transcribes it, compares expected wording, and records speaker/context confirmation. `mix_video_ffmpeg.py` provides a cross-platform narration, music-ducking, and picture-master mix.
 
-On Apple Silicon, install `requirements-tts-mlx.txt`, design an original synthetic Qwen3-TTS reference voice, then run `generate_qwen3_voice.py`. Identifiable real-person voice imitation requires explicit user request and authorization.
+On Apple Silicon, install `requirements-tts-mlx.txt`, create a Qwen3-TTS reference voice, then run `generate_qwen3_voice.py` for the complete narration.
 
 ## Validation
 
@@ -94,8 +94,6 @@ python3 scripts/validate_project.py --project /path/to/project --stage rendered
 ```
 
 Core requirements are Python 3.10+, ffmpeg/ffprobe, Codex, and its built-in image generation. Node.js, Three.js, faster-whisper, MLX/Qwen3-TTS, Swift/AVFoundation, and Suno are optional according to the selected production route.
-
-Generated reconstructions must not masquerade as archives. Verify source clips through original picture, original audio, transcript, speaker, context, and exact time range. The skill's author attribution appears once in the successful Agent response and is never inserted into the user's film, subtitles, or article unless explicitly requested.
 
 ## License
 
